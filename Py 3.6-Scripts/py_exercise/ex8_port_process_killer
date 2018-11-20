@@ -1,0 +1,49 @@
+#!/usr/bin/env python3.6
+
+import os
+import subprocess
+import argparse
+from sys import exit
+
+
+parser=argparse.ArgumentParser()
+#creating an argumrnt - port number
+parser.add_argument('port_number',help='enter the port number')
+#parsing the argument
+args=parser.parse_args()
+port_number=parser.parse_args().port_number
+
+#through the subprocess running the lsof command to list port number associated process PID listening on it
+try:
+    result=subprocess.run(
+            ['lsof','-n',"-i4TCP:%s" %port_number],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE)
+
+#if no process is listening on the port
+except subprocess.CalledProcessError:
+    print(f"No Process linstening on port - {port_number}" )
+    #to display error exit code
+    exit(1)
+
+
+else:
+    listening = None
+
+    for line in result.stdout.splitlines():
+        #if there is a program listening on the port
+        if "LISTEN" in str(line):
+            listening = line
+            break
+
+    if listening:
+        #second column in the output is the PID
+        pid = int(listening.split()[1])
+        #os kill command takes in the arguments - PID and 9 to kill
+        os.kill(pid,9)
+        print(f"Killed Process --- {pid}")
+
+    else:
+        print(f"No Process listening on {port_number}")
+        #to display error exit code
+        exit(1)

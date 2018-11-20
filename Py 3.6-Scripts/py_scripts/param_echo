@@ -1,0 +1,9 @@
+#! /usr/bin/env python3.6
+
+#importing sys lib
+import sys
+
+print(f"postional Arg: {sys.argv[1:]}")
+print(f"First Arg: {sys.argv[1]}")
+print(f"Default Argv: {sys.argv[0]}")
+print(f"Order wise  arguments : {sys.argv[1:4]}")

@@ -1,0 +1,9 @@
+#! /usr/bin/env python3.6
+
+name=input("What is your name? ")
+date= input("when were you born?")
+age=int(input("How old are you ?"))
+
+print(f"{name} was born in {date}")
+
+print(f"{name}, your age is {age}")

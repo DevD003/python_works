@@ -1,0 +1,15 @@
+#! /usr/bin/env python3.6
+
+#importing the OS lib
+
+import os
+
+stage= os.environ["STAGE"].upper()
+
+output= f" We're Running in {stage}"
+
+if stage.startswith("PROD"):
+    output = " DANGER ! DANGER ! DANGER ! - " + output
+
+print(output)
+

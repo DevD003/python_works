@@ -1,0 +1,22 @@
+#!/usr/bin/env python3.6
+
+#prompt user for a mssage to echo
+message = input(" Enter a message : ")
+count = input(" No. of Repeats [1] : ").strip()
+
+#count=1 if no input is given, prompt the user for number of times to repeat the message
+if count:
+    count = int(count)
+else:
+    count= 1
+
+def multi_echo(message, count):
+    while count > 0 :
+        print (f' {count} - {message}')
+        count-=1
+
+multi_echo(message,count)
+
+#define a function that takes message and count, then prints it as per count
+
+

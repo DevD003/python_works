@@ -1,0 +1,30 @@
+#!/usr/bin/env python3.6
+
+import argparse
+
+parser=argparse.ArgumentParser()
+#file name argument
+parser.add_argument('file_name',help='The File to read')
+#line number in the file name
+parser.add_argument('line_number',type=int,help='line to print from file')
+#parsing the argument
+args = parser.parse_args()
+
+# try opening file n given line no is read, -1 is for user i/p converted to actual index
+try:
+    #opening file in the read mode and reading the lines
+    lines = open(args.file_name,'r').readlines()
+    # readinf the specific line in the read lines
+    line = lines [arg.line_number - 1]
+
+# Index Error, if the file doesn't have specified index no.
+except IndexError:
+    print(f"Error : file '{args.file_name}' doesn't have {args.line_number} lines.")
+
+# Error - if file doesnt exist
+except IOError as err:
+    print(f"Error : {err}")
+
+#if error free print lines
+else:
+    print(line)

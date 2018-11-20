@@ -1,0 +1,35 @@
+#!/usr/bin/env python3.6
+
+#importing argparse package
+import argparse
+
+#creating the argparse
+parser=argparse.ArgumentParser(description ='Search for words,partial words')
+
+#adding argument
+parser.add_argument('snippet',help='partial or complete str search in words')
+
+#parsing arguments
+args=parser.parse_args()
+
+#assigning snippet var and making snippet arg input case-sensitive for search
+snippet = args.snippet.lower()
+
+#open a file that autocloses
+with open('/usr/share/dict/words') as f :
+    #reading the file and assigning it to words
+    words= f.readlines()
+
+#matches hold on everything we find, the snippet person passed in
+matches =[]
+
+#iterating through the words to find the snippet is in the words
+for word in words:
+    #making sure if the words loswer case matches snippet
+    if snippet in word.lower():
+        #appending to the matches, if matched to snippet
+        matches.append(word)
+
+#print he matches results
+print(matches)
+

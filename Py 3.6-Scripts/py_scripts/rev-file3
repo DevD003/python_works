@@ -1,0 +1,45 @@
+#!/usr/bin/env python3.6
+
+#importing argparse
+import argparse
+
+#build the parser
+parser = argparse.ArgumentParser(description='Read a file in reverse')
+
+#make the parser to - accept a file name and show help
+parser.add_argument('filename',help='the file to read')
+
+#adding first optional argument - limit
+parser.add_argument('--limit','-l',type=int,help='n\(lines to read\)')
+
+#adding argument - version indicator
+parser.add_argument('--version','-v',action='version',version='%(prog)s 1.0')
+
+#checking the script output -to verify working
+args=parser.parse_args()
+
+#try to check if error is internal
+try :
+    f = open(args.filename)
+    limit = args.limit
+#try error is filenotfound, then show its error - handles error
+except FileNotFoundError as err :
+    print(f"Error : {err}")
+else:
+    #file operations - open, read the file mentioned
+    with f:
+        #reading the lines from file
+        lines =f.readlines()
+        #reverse the lines read from file
+        lines.reverse()
+
+        #reversing the contents also - check the limit if any,then reverse
+        if args.limit:
+            lines=lines[ :args.limit]
+
+        for line in lines:
+            print(line.strip()[::-1])
+    print("\n ---Done Reversing---")
+
+finally:
+    print("\n Finally: executed program")

@@ -1,0 +1,20 @@
+#! /bin/bash
+
+echo Please, Enter the PostgreSql Server Ip :
+
+read server_ip
+
+echo Enter username for postgre DB - Server : $server_ip
+
+read username
+
+echo Enter password for Postgre DB - user : $username
+
+read password
+
+psql postgres://$username:$password@$server_ip:80/sample -c "SELECT count(id) From employees;"
+
+
+echo if count is 1000, then connection successful !
+
+echo Server Test Performed !
