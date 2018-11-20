@@ -1,0 +1,33 @@
+Python library reference : https://docs.python.org/3/library/index.html
+
+The Virtual Env module : https://docs.python.org/3/library/venv.html
+
+The os - Misc. operating system interfaces : https://docs.python.org/3/library/os.htmls
+
+Open function : https://docs.python.org/3/library/functions.html#open
+
+The file-object : https://docs.python.org/3/glossary.html#term-file-object
+
+The IO module : https://docs.python.org/3/library/io.html#io-overview
+
+The sys Module :https://docs.python.org/3/library/sys.html
+
+The argparse : https://docs.python.org/3/library/argparse.html
+
+The subprocess module: https://docs.python.org/3/library/subprocess.html
+
+The random module : https://docs.python.org/3/library/random.html
+
+The json module: https://docs.python.org/3/library/json.html
+
+The range type : https://docs.python.org/3/library/stdtypes.html#range
+
+The shutil module:https://docs.python.org/3/library/shutil.html
+
+The glob module : https://docs.python.org/3/library/glob.html
+
+The re module: https://docs.python.org/3/library/re.html
+
+The math module: https://docs.python.org/3/library/math.html
+
+The Setuptools package : https://setuptools.readthedocs.io/en/latest/setuptools.html#basic-use

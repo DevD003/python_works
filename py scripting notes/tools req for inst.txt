@@ -1,0 +1,55 @@
+libffi : https://sourceware.org/libffi/
+ - The libffi library provides a portable, high level programming interface to various calling conventions.
+ -This allows a programmer to call any function specified by a call interface description at run-time.
+
+Zlib : https://zlib.net/
+ - compression library
+
+bzip2 :
+ - high quality data compressor
+ -very fast, very efficient
+
+openssl:
+ -OpenSSL is a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols.
+ -It is also a general-purpose cryptography library
+
+ncurses:
+ -ncurses (new curses) is a programming library providing an application programming interface (API) that allows the programmer to write text-based user interfaces in a terminal-independent manner.
+ -It is a toolkit for developing "GUI-like" application software that runs under a terminal emulator.
+ -It also optimizes screen changes, in order to reduce the latency experienced when using remote shells.
+
+SQlite:
+ - relational database management system contained in a c programming library.
+ - SQLite is not a client–server database engine.
+ - Rather, it is embedded into the end program.
+
+ GNU Readline :
+ - GNU Readline is a software library that provides line-editing and history capabilities for interactive programs with a command-line interface, such as Bash.
+
+GDBM :
+ - GNU dbm (or GDBM, for short) is a library of database functions that use extensible hashing and work similar to the standard UNIX dbm.
+ - These routines are provided to a programmer needing to create and manipulate a hashed database.
+ - The basic use of GDBM is to store key/data pairs in a data file. Each key must be unique and each key is paired with only one data item.
+
+db4-devel:
+  - RPM resource db4-devel.
+  - The Berkeley Database (Berkeley DB) is a programmatic toolkit that provides embedded database support for both traditional and client/server applications.
+  - This package contains the header files, libraries, and documentation for building programs which use the Berkeley DB.
+
+Libpcap-devel :
+ - RPM resource libpcap-devel.
+ - Libpcap provides a portable framework for low-level network monitoring.
+ - Libpcap can provide network statistics collection, security monitoring and network debugging
+
+xz-devel :
+ - XZ Utils (previously LZMA Utils) is a set of free command-line lossless data compressors, including LZMA and xz, for Unix-like operating systems
+
+expat-devel :
+ - Expat, a stream-oriented XML parser library written in C.
+ - Expat excels with files too large to fit RAM, and where performance and flexibility are crucial.
+ - There are a number of applications and libraries using Expat, as well as bindings and 3rd-party wrappers.
+ - Expat is packaged everywhere.
+
+ words :
+ - The words file is a dictionary of English words for the /usr/share/dict directory.
+ - Some programs use this database of words to check spelling. Password checkers use it to look for bad passwords.

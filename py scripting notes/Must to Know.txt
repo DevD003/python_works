@@ -1,0 +1,17 @@
+Tiobe Index : https://www.tiobe.com/documentation/
+
+Python 2 Vs Python 3 : https://docs.python.org/3/whatsnew/3.0.html
+
+which Python ver. to use ? : https://wiki.python.org/moin/Python2orPython3
+
+pip : https://pip.pypa.io/en/stable/
+
+boto3 package : https://boto3.readthedocs.io/en/latest/s
+
+The Requests package : http://docs.python-requests.org/en/master/
+
+PIPENV Tool : https://docs.pipenv.org/
+
+Guide to python : http://docs.python-guide.org/en/latest/
+
+The Make documentation : https://www.gnu.org/software/make/manual/make.html

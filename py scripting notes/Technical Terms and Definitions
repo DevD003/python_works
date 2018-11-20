@@ -1,0 +1,48 @@
+Static Typed :
+ - languages that are those in which type checking is done at compile-time
+
+Dynamic Typed:
+ -  languages are those in which type checking is done at run-time
+
+Strong typed :
+ - A strongly typed language does not allow you to use one type as another
+
+Casting :
+ - Changing or imposing the data type
+
+REPL :
+ - read, Evaluate, Print, Loop
+
+':'
+ - is called a SLICE
+
+Immutable :
+ - cannot be changed ex: tuples
+
+Con-cat-e-nate :
+ - link things in a chain or series
+
+String Interpolation :
+ - Inserting or calling a variable at a specific position in a string ex: print(f"hello {name}") #where name is a variable
+
+Nested :
+ - One in the other ex: nested-loops, nested-fns - loop in a loop or fn in a fn
+
+Parsing :
+ - Parsing is the problem of transforming a linear sequence of characters into a syntax tree.
+
+Command line Interfaces :
+
+
+Application Interfaces:
+
+
+Exception Handling:
+
+
+List Comprehension:
+
+
+Deprecated :
+ - in terms of software development, deprecated refers to functions or elements
+   that are in the process of being replaced by newer ones.
