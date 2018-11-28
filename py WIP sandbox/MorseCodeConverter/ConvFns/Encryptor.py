@@ -1,8 +1,8 @@
-from morse_code_dictionary import *
+from ConvFns.Morse_code_dictionary import *
 # For Conversion from english to morse code 
-def encrypt(en_message):
+def Encrypt(message):
     cipher=''
-    for letter in en_message:
+    for letter in message:
         if letter != ' ':
             # As character id not space,
             # Look up dictionary to use morse code key:value pair

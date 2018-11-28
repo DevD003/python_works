@@ -1,9 +1,9 @@
 # Importing the Dictionary 
-import encryptor
-import decryptor
-import morse_code_dictionary
+import ConvFns.Encryptor
+import ConvFns.Decryptor
+import ConvFns.Morse_code_dictionary
 
-def encOrDec(self):
+def EncOrDec(self):
     print("please enter 'encrypt' / 'e' or 'decrypt' / 'd'")
     inp = input()
     if (inp == "encrypt" or inp =='e'):

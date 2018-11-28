@@ -1,10 +1,10 @@
 # Importing the dictionary 
-from morse_code_dictionary import *
-from encryptor import *
-from decryptor import *
+from ConvFns.Morse_code_dictionary import *
+from ConvFns.Encryptor import *
+from ConvFns.Decryptor import *
 
 # Verify encryption or decryption performed 
-def verifyConv_YN(output):
+def VerifyConv_YN(output):
     while True:
         print("Do you wanna Verify the conversion? Y/N")
         x=input()
@@ -22,16 +22,15 @@ def verifyConv_YN(output):
             x=input()
             continue
 
-def verifyConv(YN,output,result):
+def VerifyConv(YN,output,message,result):
     while True:
-        if YN == "Y" and output in ["e","encryption"]:
-            print("Decrypting >>> {}".format(result))
-            print(decrypt(result))
-            break
-        elif YN == "Y" and output in ["d","decryption"]:
-            print("Encrypting >>> {}".formst(result))
-            print(encrypt(result))
-            break
+        if YN == "Y" :
+            if (output == "encryption"):
+                print("Decrypting {0} >>> {1}".format(message,result))
+                break
+            elif (output == "decryption"):
+                print("Encrypting {0} >>> {1}".format(message,result))
+                break
         else:
             print("Verification --- Not Opted ---")
             break

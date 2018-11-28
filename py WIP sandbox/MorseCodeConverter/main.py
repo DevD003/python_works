@@ -1,7 +1,7 @@
-from encOrDec import encOrDec
-from encryptor import encrypt
-from decryptor import decrypt
-from verifyConv import *
+from ConvFns.EncOrDec import EncOrDec
+from ConvFns.Encryptor import Encrypt
+from ConvFns.Decryptor import Decrypt
+from ConvFns.VerifyConv import *
 # Main function for process exection or process wise flow 
 def main():
     # Input Message to encrypt or decrypt
@@ -9,18 +9,18 @@ def main():
     message = input()
     #check input to decide if encryption or decryption required
     
-    output=encOrDec(message)
+    output=EncOrDec(message)
     
     if output=="encryption":
-        result = encrypt(message.upper())
+        result = Encrypt(message.upper())
         print("The encryption of message > {0} < is || {1} ||".format(message,result))
     elif output=="decryption":
-        result = decrypt(message)
+        result = Decrypt(message)
         print("The dencryption of message || {0} || is > {1} <".format(message,result))
 
-    YN=verifyConv_YN(output)
+    YN=VerifyConv_YN(output)
     
-    verifyConv (YN,output,result)
+    VerifyConv (YN,output,message,result)
     
 
 if __name__=="__main__":
