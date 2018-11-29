@@ -1,6 +1,9 @@
 #Main for "Check for Palindrome"
 #importing function from module > fnModules
-from fnModules import *
+from fnModules.checkInput import *
+from fnModules.choiceCheck import *
+from fnModules.checkPalindrome import *
+from fnModules.stringReverser import *
 
 def main():
     #check if wanna check Palindrome
@@ -20,7 +23,7 @@ def main():
             print("{0} <!=> {1}".format(inp,output))
             print("{0} is Not a Palindrome".format(inp))
     else:
-        print("Game Exiting....")
+        print("Game and Check Exiting....")
 
 
 
