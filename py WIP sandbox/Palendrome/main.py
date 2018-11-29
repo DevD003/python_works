@@ -4,7 +4,7 @@ from fnModules.choiceCheck import checkYN
 from fnModules.checkInput import checkInputString
 from fnModules.checkPalindrome import checkPalindrome
 from fnModules.stringReverser import stringReverse
-
+from fnModules.repeatCheck import repeatGame
 def main():
     #check if wanna check Palindrome
     print("Do you wanna Play Palindrome Check? Y/N ")
@@ -20,12 +20,20 @@ def main():
         if ans == "Palindrome":
             print("{0} <=> {1} ".format(inp,output))
             print("{0} is a Palindrome".format(inp))
+            repeat=repeatGame()
         else:
             print("{0} <!=> {1}".format(inp,output))
             print("{0} is Not a Palindrome".format(inp))
+            repeat=repeatGame()  
     else:
-        print("Game and Check Exiting....")
+        print("Game Exiting...")
 
+    if  repeat == "y":
+        print("Reloading Game Check...") 
+        main()
+    else:
+        print("Game Exiting...")
 
 if __name__ == "__main__" :
     main()
+
