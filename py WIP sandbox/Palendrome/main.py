@@ -1,20 +1,21 @@
 #Main for "Check for Palindrome"
 #importing function from module > fnModules
-from fnModules.checkInput import *
-from fnModules.choiceCheck import *
-from fnModules.checkPalindrome import *
-from fnModules.stringReverser import *
+from fnModules.choiceCheck import checkYN
+from fnModules.checkInput import checkInputString
+from fnModules.checkPalindrome import checkPalindrome
+from fnModules.stringReverser import stringReverse
 
 def main():
     #check if wanna check Palindrome
     print("Do you wanna Play Palindrome Check? Y/N ")
     choice=checkYN(input())
-
+    # if the palindrome is selected "y" else "N"clear 
     if choice== "y":
         #Input the string to check as palindrome
-        inp=checkInput(input())
+        print("Please enter the String:")
+        inp=input()
+        checkInputString(inp)
         output=stringReverse(inp)
-        print(output)
         ans=checkPalindrome(inp,output)
         if ans == "Palindrome":
             print("{0} <=> {1} ".format(inp,output))
@@ -26,7 +27,5 @@ def main():
         print("Game and Check Exiting....")
 
 
-
-
-if __name__ == "__main__":
+if __name__ == "__main__" :
     main()

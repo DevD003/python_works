@@ -8,6 +8,6 @@ def checkInputString (x):
             print("Enter a Valid String")
             continue
         else:
-            print("String Entered.....")
+            print("String Entered...")
             break
 
