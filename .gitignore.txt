@@ -1,3 +1,0 @@
-*.pyc
-*.ipnyb_checkpoints
-__pycache__
