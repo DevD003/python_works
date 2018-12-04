@@ -4,7 +4,7 @@ def repeatGame():
     option = checkYN(input())
     if option == "Y":
         print(" !! > Reloading Game...")
-        return "reload"
+        return "Reload"
     else:
         print(" !! > Closing & Exiting Game...")
 
