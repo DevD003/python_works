@@ -1,0 +1,8 @@
+1. Python 2 or 3 dependeny 
+2. Add to system Path
+3. Pip install and add to path
+4. Install Selenium Python Libraries
+    pip install -U selenium 
+or install from the pYcharm repository
+5. Download IDE PyCharm
+6. Test Case  one with the imported modeules 
